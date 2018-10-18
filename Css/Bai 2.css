@@ -1,0 +1,33 @@
+.content{
+            width: 800px;
+            height: 100px;
+        }
+            .content .item {
+                width: 25%;
+                height: 100%;
+                float: left;
+            }
+                .item-left{
+                    width: 25%;
+                    float: left;
+                    text-align: center;
+                }
+                	.item-top{
+                	}
+                .item-right{
+                    width: 75%;
+                    float: left;
+                }
+                    .item-bottom{
+                        height: 50px;
+                        margin-top: 30px;
+                        line-height: 50px;
+                    }
+        .content .item-bottom{
+        	font-weight: bold;
+        }
+        .content .item-bottom:hover{
+        	text-decoration: underline;
+        	font-weight: bold;
+        	color: blue;
+        }
