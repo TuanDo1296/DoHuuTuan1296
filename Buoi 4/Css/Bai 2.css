@@ -1,0 +1,170 @@
+body{
+			background-image: url(../Images/bg.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#header{
+			font-family: tahoma;
+			font-style: italic;
+			font-size: 40px;
+			padding-left: 30px;
+		}
+		.button{
+			background-color: transparent;
+			height: 35px;
+			border-radius: 10px;
+			border-color: transparent;
+			color: black;
+			font-weight: bold;
+		}
+		.button:hover,.button:active{
+			background-color: 	#EEEDEE;
+			border-radius: 10px;
+		}
+		#menubar,.list1{
+			float: left;
+		}
+		.menuleft{
+			list-style: none;
+			padding-left: 30px;
+			margin-right: 25px;
+		}
+		.menuleft>li{
+			padding-bottom: 10px;
+		}
+		.item1>a{
+			font-family: tahoma;
+			font-size: 15px;
+			text-decoration: none;
+			color: grey;
+		}
+		.item1>a:hover{
+			color: red;
+			text-decoration: underline;
+		}
+		p{
+			margin-left: 5px;
+			font-family: tahoma;
+			font-weight: bold;
+		}
+		.list1,.list2,.list3{
+			border: 0px solid #EEEEEE;
+			border-radius: 15px;
+			width: 150px;
+			height: 220px;
+			background-color: #EEEEEE;
+			margin-left: 12px;
+		}
+		.list2{
+			float: left;
+		}
+		#top{
+			position: relative;
+		}
+		#middle{
+			position: absolute;
+			bottom: 0px;
+			top: 290px;
+			left: 156px;
+		}
+		#bottom{
+			position: absolute;
+			bottom: 0px;
+			top: 505px;
+			left: 156px;
+		}
+		#tech{
+			background-image: url(../Images/ip.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;
+		}
+		#travel{
+			background-image: url(../Images/travel.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;
+		}
+		#photo{
+			background-image: url(../Images/photo.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;
+		}
+		#finance{
+			background-image: url(../Images/finance.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;	
+		}
+		#movie{
+			background-image: url(../Images/movie.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;
+		}
+		#cooking{
+			background-image: url(../Images/cooking.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;
+		}
+		#fashion{
+			background-image: url(../Images/fashion.jpg);
+			background-size: 150px 170px;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			position: relative;
+		}
+		#footer{
+			margin-top: 700px;
+		}
+		.footer{
+			display: inline-block;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+		.overlay{
+			position: absolute;
+			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			opacity: 0.5;
+  			background-color: black;
+  			overflow: hidden;
+  			width: 100%;
+  			height: 0;
+  			transition: .5s ease;
+  			border-bottom-left-radius: 15px;
+  			border-bottom-right-radius: 15px;
+		}
+		#tech:hover .overlay{
+			height: 20%;
+		}
+		#travel:hover .overlay{
+			height: 20%;
+		}
+		#photo:hover .overlay{
+			height: 20%;
+		}
+		#finance:hover .overlay{
+			height: 20%;
+		}
+		#movie:hover .overlay{
+			height: 20%;
+		}
+		#cooking:hover .overlay{
+			height: 20%;
+		}
+		#fashion:hover .overlay{
+			height: 20%;
+		}
+		.text{
+			color: white;
+		}

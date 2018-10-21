@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul{
+			list-style: none;
+			padding: 0px;
+			height: 44px;
+		}
+		#menubar{
+			background-color: #78B43A;
+			padding: 0px;
+		}
+		#icon,#danhmuc,.menuitem2{
+			float: left;
+			line-height: 44px;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		div>li{
+			border-right: grey solid 1px;
+			height: 44px;
+		}
+		.menuitem2>a{
+			border-right: white solid 1px;
+			padding-right: 7px;
+		}
+		.subitem,.itemdanhmuc{
+			height: 50px;
+			background-color: #A8D862;
+			margin: -13px;
+			min-width: 250px;
+			border-top: #78B43A solid 1px;
+			padding-left: 20px;
+		}
+		ul>.subitem{
+			display: none;
+		}
+		ul>.itemdanhmuc{
+			display: none;
+		}
+		#hover1{
+			height: 44px;
+		}
+		#hover1:hover .subitem{
+			display: block;
+		}
+		ul>li{
+			position: relative;
+		}
+		.submenu{
+			position: absolute;
+		}
+		#danhmuc:hover .itemdanhmuc{
+			display: block;
+		}
+		.itemdanhmuc{
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="menubar">
+		<ul>
+			<div>
+				<li class="menuitem1" id="icon"><a href="#"><img height="44px" src="Images/24h_logo.png"></a></li>
+				<li class="menuitem1" id="danhmuc"><a href="#"><img src="Images/xem-danh-muc.gif">Xem danh mục</a>
+					<ul class="subdanhmuc">
+						<li class="itemdanhmuc"><a href="#"><img src="Images/menuDot.gif" alt=""> Trang chủ 24h</a></li>
+						<li class="itemdanhmuc"><a href="#"><img src="Images/menuDot.gif" alt=""> Tin tức trong ngày</a></li>
+						
+					</ul>
+				</li>
+			</div>
+			<li class="menuitem2"><a href="#">Tin quốc tế</a></li>
+			<li class="menuitem2" id="hover1"><a href="#">Hi-Tech</a>
+				<ul class="submenu">
+					<li class="subitem"><a href="#"><img src="Images/menuDot.gif" alt=""> Lorem ipsum dolor sit amet.</a></li>
+					<li class="subitem"><a href="#"><img src="Images/menuDot.gif" alt=""> Lorem ipsum dolor sit amet.</a></li>
+					<li class="subitem"><a href="#"><img src="Images/menuDot.gif" alt=""> Lorem ipsum dolor sit amet.</a></li>
+					<li class="subitem"><a href="#"><img src="Images/menuDot.gif" alt=""> Lorem ipsum dolor sit amet.</a></li>
+					<li class="subitem"><a href="#"><img src="Images/menuDot.gif" alt=""> Lorem ipsum dolor sit amet.</a></li>
+				</ul>
+			</li>
+			<li class="menuitem2"><a href="#">Showbiz</a></li>
+			<li class="menuitem2"><a href="#">Giải trí</a></li>
+			<li class="menuitem2"><a href="#">Sống trẻ</a></li>
+			<li class="menuitem2"><a href="#">Thể thao</a></li>
+			<li class="menuitem2"><a href="#">Sức khỏe</a></li>
+			<li class="menuitem2"><a href="#">Video</a></li>
+			<li class="menuitem2"><a href="#">Phái đẹp</a></li>
+			<li class="menuitem2"><a href="#">Game</a></li>
+		</ul>
+	</div>
+</body>
+</html>
