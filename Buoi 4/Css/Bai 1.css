@@ -1,0 +1,89 @@
+ul{
+			list-style: none;
+			padding: 0px;
+			height: 44px;
+		}
+		#menubar{
+			background-color: #78B43A;
+			padding: 0px;
+		}
+		#icon,#danhmuc,.menuitem2{
+			float: left;
+			line-height: 44px;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		div>li{
+			border-right: grey solid 1px;
+			height: 44px;
+		}
+		.menuitem2>a{
+			border-right: white solid 1px;
+			padding-right: 7px;
+		}
+		.subitem{
+			height: 50px;
+			background-color: #A8D862;
+			margin: -13px;
+			min-width: 250px;
+			border-top: #78B43A solid 1px;
+			padding-left: 20px;
+		}
+		.itemdanhmuc{
+			height: 50px;
+			background-color: #A8D862;
+			margin: -13px;
+			min-width: 250px;
+			border-top: #78B43A solid 1px;
+			padding-left: 20px;
+		}
+		.itemdanhmuc2{
+			height: 50px;
+			background-color: #78B43A;
+			margin: -13px;
+			min-width: 250px;
+			border-top: white solid 1px;
+			padding-left: 20px;
+		}
+		ul>.subitem{
+			display: none;
+		}
+		ul>.itemdanhmuc{
+			display: none;
+		}
+		ul>.itemdanhmuc2{
+			display: none;
+		}
+		#hover1{
+			height: 44px;
+		}
+		#hover1:hover .subitem{
+			display: block;
+		}
+		ul>li,div>li{
+			position: relative;
+		}
+		.submenu{
+			position: absolute;
+			top: 56px;
+		}
+		.subdanhmuc{
+			position: absolute;
+			top: 56px;
+			right: -17px;
+		}
+		.subdanhmuc2{
+			position: absolute;
+			right: -257px;
+			top: 12px;
+		}
+		#danhmuc:hover .itemdanhmuc{
+			display: block;
+		}
+		#hover2:hover .itemdanhmuc2{
+			display: block;
+		}
