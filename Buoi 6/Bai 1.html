@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: arial;
+		}
+		#header{
+			height: 100px;
+			width: 100%;
+			text-align: center;
+		}
+		.item{
+			list-style: none;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.menu>.item{
+			line-height: 100px;
+		}
+		.menu>.item a{
+			width: 50px;
+			text-decoration: none;
+			list-style: none;
+			color: black;
+			border-top: 1px black solid;
+			border-bottom: 1px black solid;
+			padding-right: 30px;
+			padding-left: 30px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			position: relative;
+		}
+		#content{
+			height: auto;
+			background-color: #F4F5F9;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		#tieude1{
+			text-align: center;
+			padding-top: 150px;
+			font-size: 55px;
+			color: #60a7ab;
+		}
+		#tieude2{
+			padding-top: 15px;
+			text-align: center;
+			font-size: 20px;
+		}
+		article{
+			margin-top: 40px;
+			width: 100%;
+			/*border: 1px red solid;*/
+		}
+		.article{
+			width: 30%;
+			display: inline-block;
+			padding-right: 32px;
+			margin-top: 10px;
+			padding-bottom: 30px;
+		}
+		.img{
+			width: 100%;
+			padding: 5px;
+			background-color: white;
+			border: 1px grey solid;
+			border-radius: 5px;
+		}
+		#cttext{
+			padding-left: 5px;
+			padding-top: 10px;
+		}
+		.tieudeimg{
+			color: #60a7ab;
+		}
+		.greytext{
+			color: grey;
+			font-size: 15px;
+		}
+		h3{
+			color: grey;
+			font-size: 15px;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+		#about{
+			width: 50%;
+			padding-left: 10%;
+			padding-top: 20px;
+			display: inline-block;
+			padding-bottom: 50px;
+		}
+		#stalker{
+			width: 30%;
+			padding-top: 20px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		#aboutext{
+			margin-right: 80px;
+		}
+		#border{
+			width: 100%;
+			height: 10px;
+			background-image: url('Images/border.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			float: left;
+		}
+		#contact{
+			padding-left: 10%;
+			background-color: #66CCCC;
+			color: white;
+		}
+		#contact>*{
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+		#contact>h2{
+			padding-top: 50px;
+		}
+		button{
+			width: 50px;
+			height: 30px;
+			text-align: center;
+		}
+		@media(max-width: 1300px){/* Màn hình từ 1300px trở lên*/
+			article{
+				text-align: center;
+			}
+			.article{
+				width: 28%;
+				display: inline-block;
+			}
+			#cttext{
+				text-align: left;
+			}
+		}
+		@media(max-width: 960px){/* Màn hình từ 960px trở xuống*/
+			article{
+				text-align: center;
+			}
+			.article{
+				width: 25%;
+				display: inline-block;
+			}
+			#cttext{
+				text-align: left;
+			}
+			#tieude1{
+				font-size: 32px;
+			}
+		}
+		@media(max-width: 700px){/* Màn hình từ 700px trở xuống*/
+			article{
+				text-align: center;
+			}
+			.article{
+				width: 40%;
+				display: inline-block;
+			}
+			#header{
+				text-align: center;
+			}
+			#cttext{
+				text-align: left;
+			}
+			.menu>.item a{
+				font-size: 12px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			img{
+				width: 100px;
+			}
+			#about,#stalker{
+				display: block;
+				width: auto;
+			}
+			#stalker{
+				padding-left: 10%;
+				padding-bottom: 30px;
+			}
+			#tieude1{
+				font-size: 23px;
+				padding-top: 50px;
+			}
+			#tieude2{
+				font-size: 15px;
+			}
+		}
+		@media(max-width: 480px){/* Màn hình từ 480px trở xuống*/
+			article{
+				text-align: center;
+			}
+			.article{
+				width: 100%;
+				display:block;
+			}
+			#header{
+				width: 100%;
+				text-align: center;
+			}
+			#cttext{
+				text-align: left;
+			}
+			.item{
+				display: none;
+			}
+			#menuimg{
+				display: block;
+			}
+			#about,#stalker{
+				display: block;
+				width: auto;
+			}
+			#stalker{
+				padding-left: 10%;
+				padding-bottom: 30px;
+			}
+			#tieude1{
+				font-size: 20px;
+				padding-top: 30px;
+			}
+			#tieude2{
+				font-size: 14px;
+			}
+		}
+	</style>
+</head>
+<body>
+<div id="header">
+	<nav>	
+	        <ul class="menu">
+	            <li class="item">
+	                <a href="#" style="left: 4px;">WORK</a>
+	            </li>
+	            <li class="item">  
+	                <a href="#">ABOUT</a>
+	            </li>
+	        
+	        
+	            <li id="menuimg" class="item">
+	            	<img src="images/logo-sm.png" alt="Menu">
+	            </li>
+	        
+			
+	            <li class="item">
+	                <a href="#">BLOG</a>
+	            </li>
+	            <li class="item">  
+	                <a href="#" style="right: 4px;">CONTACT</a>
+	            </li>
+	        </ul>
+	</nav>
+</div>
+<div id="content">
+	<div id="tieude">
+		<p id="tieude1">I design and make cool things for the web & mobile devices</p>
+		<p id="tieude2">Here's a selection of things i have worked on throughout me career*</p>
+	</div>
+	<article>
+		<div class="article">
+			<div id="ctimg">
+				<img class="img" src="Images/euroloo.co.uk.png">
+			</div>
+			<div id="cttext">
+				<strong class="tieudeimg">Euroloo</strong>
+				<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div id="ctimg">
+				<img class="img" src="Images/badaboosh.co.uk.png">
+			</div>
+			<div id="cttext">
+				<strong class="tieudeimg">Euroloo</strong>
+				<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div id="ctimg">
+				<img class="img" src="Images/badabooshforschools.co.uk.png">
+			</div>
+			<div id="cttext">
+				<strong class="tieudeimg">Euroloo</strong>
+				<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div id="ctimg">
+				<img class="img" src="Images/sellmymobile.com.png">
+			</div>
+			<div id="cttext">
+				<strong class="tieudeimg">Euroloo</strong>
+				<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div id="ctimg">
+				<img class="img" src="Images/randrbridalwear.co.uk.png">
+			</div>
+			<div id="cttext">
+				<strong class="tieudeimg">Euroloo</strong>
+				<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</p>
+			</div>
+		</div>
+		<div class="article">
+			<div id="ctimg">
+				<img class="img" src="Images/vouchercodedeals.com.png">
+			</div>
+			<div id="cttext">
+				<strong class="tieudeimg">Euroloo</strong>
+				<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</p>
+			</div>
+		</div>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis.</h3>
+	</article>
+</div>
+<div>
+	<div id="about">
+		<div id="aboutext">
+			<strong class="tieudeimg">About</strong><br>
+			<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsum praesentium debitis qui recusandae quis. lorem50</p><br>
+			<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eligendi, explicabo tenetur quis quibusdam cum sit dolor a excepturi accusantium fuga. Quae ipsum quam consectetur, praesentium veritatis distinctio libero! Similique.</p><br>
+			<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis assumenda magni explicabo iusto mollitia incidunt.</p>
+			<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores reprehenderit ea necessitatibus expedita unde, pariatur voluptate inventore cumque incidunt ut reiciendis suscipit rem perspiciatis exercitationem excepturi corporis recusandae eligendi tenetur, eum corrupti fuga molestias ipsa odit. Aspernatur, ab reiciendis sit eos quis quos neque ratione similique asperiores ipsa, velit aliquam officiis quaerat quia enim repellendus possimus tempora perferendis cum laudantium</p>
+		</div>
+	</div>
+	<div id="stalker">
+		<strong class="tieudeimg">Stalker? Cool</strong><br>
+		<p class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+</div>
+<div id="border"></div>
+<div id="contact">
+	<h2>Say Hello</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolor!</p><br>
+	<p>Name</p>
+	<input type="text" name="" placeholder="Your name pls" size="auto"><br>
+	<p>Email</p>
+	<input type="email" name="" placeholder="Your email pls" size="auto"><br>
+	<p>What's in your mind???</p>
+	<textarea rows="4" cols="50"></textarea><br>
+	<button>Send</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		#menu>ul{
+			padding-left: 0px;
+		}
+		#menu{
+			background-color: green;
+			height: 45px;
+		}
+		#menu>ul>li.item{
+			display: inline-block;
+			list-style: none;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		#menu>ul>li.item a{
+			text-decoration: none;
+			color: white;
+			line-height: 45px;
+		}
+		#menu>ul>li.item:first-child{
+			color: white;
+			line-height: 45px;
+			display: none;
+		}
+		@media(max-width: 770px ){
+			#menu>ul>li.item{
+				display: none;
+			}
+			#menu>ul>li.item:first-child{
+				display: block;
+			}
+			#menu>ul:hover>li.item{
+				display: block;
+				background-color: green;
+				max-width: 120px;
+			}
+			li.item:hover{
+				background: linear-gradient(to bottom, green 90%, white 10%)
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav id="menu">
+		<ul>
+			<li class="item"><i class="fas fa-bars"></i><a href="#"> Menu</a></li>
+			<li class="item"><a href="#">Home</a></li>
+			<li class="item"><a href="#">About</a></li>
+			<li class="item"><a href="#">Course</a></li>
+			<li class="item"><a href="#">Recruit</a></li>
+			<li class="item"><a href="#">News</a></li>
+			<li class="item"><a href="#">Contact</a></li>
+			<li class="item"><a href="#">Home</a></li>
+			<li class="item"><a href="#">About</a></li>
+			<li class="item"><a href="#">Course</a></li>
+			<li class="item"><a href="#">Recruit</a></li>
+			<li class="item"><a href="#">News</a></li>
+			<li class="item"><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
