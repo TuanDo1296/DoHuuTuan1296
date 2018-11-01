@@ -1,0 +1,365 @@
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: arial;
+		}
+		#header{
+			height: 60px;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		#bar{
+			display: none;
+		}
+		#logo{
+			float: left;
+		}
+		#menu{
+			float: right;
+			line-height: 60px
+		}
+		#menu>ul .item{
+			display: inline-block;
+			list-style: none;
+			text-decoration: none;
+		}
+		.item>a{
+			text-decoration: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			color: black;
+			font-size: 12px;
+			font-weight: bold;
+		}
+		.item>a:hover{
+			color: orange;
+		}
+		#content1{
+			background-image: url('../Images/1.jpg');
+			/*background-size:100%;*/
+			width: 100%;
+			height: 560px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			text-align: center;
+		}
+		#content>p{
+			text-align: center;
+			font-size: 10px;
+			border-radius: 50%;
+			padding-top: 5px;
+			color: grey;
+		}
+		#content>p i{
+			padding-right: 5px;
+		}
+		#content>p i:hover{
+			color: orange;
+		}
+		#content2{
+			text-align: center;
+		}
+		#content2>h4{
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+		#content2>h3{
+			padding-bottom: 50px;
+		}
+		#content3{
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		.ct3item{
+			width: 24.5%;
+			text-align: center;
+			display: inline-block;
+		}
+		.ct3item>i{
+			margin: 20%;
+			font-size: 30px;
+			border: 1px solid #f36e24;
+			border-radius: 50%;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-right: 12px;
+			padding-left: 12px;
+			background: #f36e24;
+			color: white;
+		}
+		#content4{
+			text-align: center;
+		}
+		#content4>h3{
+			padding-top: 70px;
+			padding-bottom: 50px;
+		}
+		#content5{
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		#content5>img{
+			width: 49%;
+			height: auto;
+		}
+		.ct6item{
+			width: 32.5%;
+			display: inline-block;
+			text-align: center;
+			padding-top: 50px;
+			padding-bottom: 70px;
+		}
+		.ct6item>i{
+			font-size: 35px;
+			border: 1px solid ;
+			border-radius: 50%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 17px;
+			padding-left: 17px;
+			background: #f36e24;
+			color: white;
+			vertical-align: top;
+		}
+		.ct6item>div{
+			display: inline-block;
+			width: 50%;
+			padding-left: 5px;
+			text-align: left;
+		}
+		#content7{
+			background: #f36e24;
+			height: 350px;
+			text-align: center;
+		}
+		#content7>h3{
+			padding-top: 80px;
+			padding-bottom: 30px;
+			color: white;
+		}
+		#content7>h5{
+			padding-bottom: 50px;
+			color: white;
+		}
+		.button{
+			height: 30px;
+			border: white;
+			border-radius: 15px;
+			background-color: white;
+			color: black;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		#content8{
+			padding-top: 80px;
+			padding-left: 5%;
+			padding-right: 5%;
+			background: gainsboro;
+		}
+		#ct8text{
+			text-align: center;
+			padding-bottom: 50px;
+		}
+		.ct8item{
+			width: 24.5%;
+			text-align: center;
+			display: inline-block;
+			padding-bottom: 100px;
+		}
+		.ct8item>img{
+			border-radius: 25px;
+			margin-bottom: 50px;
+		}
+		#content9{
+			padding: 5%;
+			background: #3a3434;
+			color: white;
+			text-align: left;
+		}
+		.ct9item{
+			width: 30%;
+			padding-right: 20px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		#footer{
+			padding-left: 5%;
+			padding-right: 5%;
+			background: black;
+			height: 60px; 
+			color: white;
+		}
+		ul>.item1{
+			display: inline-block;
+			padding-left: 10px;
+			padding-right: 10px;
+			list-style: none;
+
+		}
+		.item1>a{
+			text-decoration: none;
+			color: white;
+		}
+		#footer>p{
+			float: left;
+			line-height: 60px;
+		}
+		#footer>nav{
+			float: right;
+			line-height: 60px;
+		}
+		@media(max-width: 960px){ /*Man Hinh Lap Top tu 960px den 1400px*/
+			.ct3item{
+				width: 24.5%;
+				text-align: center;
+				display: inline-block;
+			}
+			#content1{
+				background-image: url('../Images/1.jpg');
+				/*background-size:100%;*/
+				width: 100%;
+				height: 390px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				text-align: center;
+			}
+		}
+		@media(max-width: 720px){ /*Man Hinh Tablet 720px*/
+			.item>a {
+    			text-decoration: none;
+    			padding-left: 7px;
+    			padding-right: 7px;
+    			color: black;
+    			font-size: 9px;
+    			font-weight: bold;
+			}
+			#content1{
+				background-image: url('../Images/1.jpg');
+				/*background-size:100%;*/
+				width: 100%;
+				/*height: 300px;*/
+				background-size: contain;
+				background-repeat: no-repeat;
+				text-align: center;
+			}
+			.ct3item{
+				width: 24%;
+				text-align: center;
+				display: inline-block;
+			}
+			#content4>h5{
+				font-size: 11px;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+			#content4>h3{
+				padding-bottom: 30px;
+			}
+			#content5>img{
+				padding-left: 5%;
+				padding-right: 5%;
+				width: 90%;
+				display: block;
+			}
+			.ct6item{
+				display: block;
+				text-align: center;
+				width: 100%;
+				padding-bottom: 20px;
+			}
+			.ct8item{
+				display: block;
+				width: 100%;
+			}
+			.ct8item>img{
+				width: 200px;
+			}
+			.ct9item{
+				display: block;
+				width: 90%;
+				padding-left: 5%;
+				padding-right: 5%;
+				padding-top: 50px;
+			}
+		}
+		@media(max-width: 480px){ /*Man Hinh Smart Phone 480px*/
+			#content1{
+				background-image: url('../Images/1.jpg');
+				/*background-size:100%;*/
+				width: 100%;
+				height: 200px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				text-align: center;
+			}
+			.ct3item{
+				display: block;
+				width: 90%;
+				height: 300px;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+			.ct3item>i{
+				margin: 10%;
+				font-size: 60px;
+				border: 1px solid #f36e24;
+				border-radius: 50%;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				padding-right: 12px;
+				padding-left: 12px;
+				background: #f36e24;
+				color: white;
+			}
+			#heart{
+				width: 37.5px;
+    			padding-right: 40px;
+    			padding-left: 20px;
+    			padding-top: 20px;
+    			padding-bottom: 20px;
+			}
+			.ct6item{
+				display: block;
+				text-align: left;
+				padding-left: 10%;
+			}
+			#content6{
+				width: 85%;
+			}
+			.ct6item>i{
+				font-size: 80px;
+				border: 1px solid #f36e24;
+				border-radius: 50%;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-right: 12px;
+				padding-left: 12px;
+				background: #f36e24;
+				color: white;
+			}
+			.ct6item>div h5{
+				font-size: 12px;
+				width: 250px;
+			}
+			.item>a{
+				display: none;
+			}
+			#footer{
+				height: 120px;
+			}
+			#footer>p{
+				float: none;
+			}
+			#fotter>nav{
+				float: right;
+			}
+			#bar{
+				display: block;
+				
+			}
+			#bar>a i{
+				padding: 5px;
+				border: 1px grey solid;
+				border-radius: 10%;
+			}
+		}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			/*margin: 0px;*/
+			padding: 0px;
+			font-family: arial;
+		}
+		#header{
+			padding-left: 5%;
+			padding-right: 5%;
+			height: 60px;
+			border-bottom: 1px #f3f1f1 solid;
+			box-shadow: 0 5px 5px 0px #f3f1f1;
+		}
+		#logo{
+			width: 20%;
+			float: left;
+			line-height: 60px;
+			margin-top: 10px;
+		}
+		#menu{
+			width: 70%;
+			float: right;
+			text-align: right;
+		}
+		#logo>img{
+			height: 40px;
+		}
+		#menu>ul .item{
+			display: inline-block;
+			list-style: none;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.item>a{
+			text-decoration: none;
+			color: black;
+			font-size: 20px;
+		}
+		#menu>ul .item a:hover{
+			color: orange;
+		}
+		#leftbar{
+			padding-left: 5%;
+			width: 15%;
+			padding-right: 30px;
+		}
+		#leftbar>ul{
+			padding-left: 0px;
+		}
+		ul>.leftitem{
+			list-style: none;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.leftitem>a{
+			text-decoration: none;
+			font-size: 12px;
+			color: black;
+			padding: 8px;
+			font-weight: bold;
+		}
+		#leftbar>ul .leftitem:hover{
+			background-color: orange;
+			
+		}
+		#leftbar>ul .leftitem:hover a {
+			color: white;
+		}
+		h3{
+			color: grey;
+			padding-left: 8px;
+		}
+		#content{
+			width: 50%;
+			border: grey 1px solid;
+			margin-top: 20px;
+			box-shadow: 0 0 15px grey;
+			padding: 25px;
+			display: inline-block;
+			border-radius: 3px;
+		}
+		#body{
+			display: inline-flex;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="new-tech-logo-gs.jpg">
+		</div>
+		<nav id="menu">
+			<ul>
+				<li class="item"><a href="#">Học viên</a></li>
+				<li class="item"><a href="#">Trang chủ</a></li>
+				<li class="item"><a href="#">Ví tiền</a></li>
+				<li class="item"><a href="#">Thông báo</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="body">
+		<nav id="leftbar">
+			<ul>
+				<li class="leftitem"><a href="#">Học viên</a></li>
+				<li class="leftitem"><a href="#"><i class="fas fa-home"></i> Trang chủ</a></li>
+				<h3>Cẩm nang lớp học</h3>
+				<li class="leftitem"><a href="#"><i class="fas fa-exclamation-circle"></i> Quy định bảo lưu</a></li>
+				<li class="leftitem"><a href="#"><i class="fas fa-exclamation-circle"></i> Nội quy</a></li>
+				<li class="leftitem"><a href="#"><i class="fas fa-comment"></i> Đánh giá giảng dạy</a></li>
+				<h3>Lớp học</h3>
+				<li class="leftitem"><a href="#"><i class="fas fa-graduation-cap"></i> Web Frontend 21</a></li>
+				<h3>Mục khác</h3>
+				<li class="leftitem"><a href="#"><i class="fas fa-file-alt"></i> Tạo CV</a></li>
+				<li class="leftitem"><a href="#"><i class="far fa-check-square"></i> Kiểm tra trình độ</a></li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h2>Zent Coding School - Tuyển dụng trợ giảng các khóa Web Front End, PHP, Laravel</h2>
+			<div style="padding-left: 15px">
+				<p style="border-bottom: 1px black dashed; width:80px; font-size: 14px;"><i class="fas fa-info-circle"></i> Trợ giảng</p>
+				<p style="font-size: 14px;"><i class="fas fa-users"></i> 4 Người</p>
+				<p style="font-size: 16px;color: orange;">Yêu cầu cụ thể</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có kiến thức chuyên sâu trong các khóa đăng ký làm trợ giảng.</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có kiến thức chuyên sâu trong các khóa đăng ký làm trợ giảng.</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có kiến thức chuyên sâu trong các khóa đăng ký làm trợ giảng.</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có kiến thức chuyên sâu trong các khóa đăng ký làm trợ giảng.</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có thời gian để thực hiện công việc liên quan đến lớp học: tham gia trợ giảng tại lớp, hỗ trợ học viên qua skype, teamviewer...</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Yêu thích các hoạt động ngoại khóa và có khả năng tham gia vào các chương trình ngoại khóa với học viên Zent.</p>
+				<p style="font-size: 16px;color: orange;">Hãy trở thành giảng viên của ZENT bằng cách</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Gửi CV về địa chỉ email: info@zent.vn với tiêu đề - Ứng tuyển vị trí Trợ giảng khóa học......Hạn nộp CV: 18h00 ngày 12/10/2018.</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có thời gian để thực hiện công việc liên quan đến lớp học: tham gia trợ giảng tại lớp, hỗ trợ học viên qua skype, teamviewer...</p>
+				<p><i class="fas fa-star" style="color: orange;"></i>Có thời gian để thực hiện công việc liên quan đến lớp học: tham gia trợ giảng tại lớp, hỗ trợ học viên qua skype, teamviewer...</p>
+			</div>
+		</div>
+		<div id="qcao">
+			
+		</div>
+	</div>
+</body>
+</html>
