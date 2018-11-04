@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="Js/thuc hanh.js"></script>
+</head>
+<body>
+<!-- 	<button onclick="clickme()">Click me</button>
+	<button onclick="clickme2()">Hello</button>
+	<button onclick="clickme3()">Fuck</button>
+	<button onclick="clickme4()">You</button>
+	<button onclick="clickme5()">Click</button>
+	<button onclick="clickme6()">Click</button> -->
+	<h1 id="name" style="">Duc Cop</h1>
+	<p class="text">Lorem ipsum dolor sit amet.</p>
+	<p class="text">Lorem ipsum dolor sit amet.</p>
+	<input type="text" id="input" name="">
+	<button onclick="add()">Add</button>
+	<div id="content"></div>
+	<script type="text/javascript">
+		function add(){
+			var input = document.getElementById('input');
+			var content = document.getElementById('content');
+			var a = input.value
+			content.innerHTML += a +'<br>';
+			input.value='';
+		}
+	</script>
+</body>
+</html>
