@@ -1,0 +1,16 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.checkbox, .text{
+	display: inline-block;
+	padding: 15px;
+	border: 1px #ccc solid;
+	border-bottom: none;
+	position: relative;
+	background: #5078e6;
+}
+p{
+	position: absolute;
+	left: -5px;
+}

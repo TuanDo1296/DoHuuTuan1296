@@ -1,0 +1,41 @@
+div.container {
+width: 50%; 
+}
+/* định dạng thẻ div chứa các button tab */
+div.tab {
+    overflow: hidden; 
+    border: 1px solid #ccc; 
+    background-color: white; 
+}
+
+/* định dạng các button tab */
+div.tab button {
+    background-color: inherit; 
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* đổi màu khi một button tab được hover */
+div.tab button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+div.tab button.active {
+    background-color: black;
+    color: white;
+}
+
+/* định dạng nội dung hiển thị */
+.content {
+    display: none;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

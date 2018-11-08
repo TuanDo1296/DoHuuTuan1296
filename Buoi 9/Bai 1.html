@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="tang">Tăng</button>
+	<button id="giam">Giảm</button>
+	<button id="macdinh">Mặc định</button>
+	<h4 id="text">Lorem ipsum dolor sit amet.</h4>
+	<script type="text/javascript">
+		document.getElementById('tang').addEventListener('click',function(){
+			var fs = document.getElementById('text').style.fontSize;
+			var res = parseInt(fs.split('px',0)) + 5;
+			fs = res +'px';
+		})
+	</script>
+	<input type="button" id="" onclick="zoominLetter()" value="Tăng">
+	<input type="button" id="" onclick="zoomoutLetter()" value="Giảm">
+	<input type="button" onclick="normal()" value="Mặc định">
+	<p>Lorem ipsum dolor sit amet.</p>
+
+	<script type="text/javascript" src="Js/Bai 1.js"></script>
+</body>
+</html>
