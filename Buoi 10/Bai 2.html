@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Css/Bai 2.css">
+</head>
+<body>
+	<form nane="register" method="post" action="" onsubmit="return validateForm()">
+		<div class="content">
+			<div id="label">
+				<label>Họ và tên</label>
+			</div>
+			<input class="input" type="text" name="" id="name" placeholder="Nhập họ tên">
+			<p class="error" id= "errorname"></p>
+		</div>
+		<div class="content">
+			<div id="label">
+				<label>Giới tính</label>
+			</div>
+			<input type="radio" name="gender" id="male" value="Male"> Nam
+			<input type="radio" name="gender" id="female" value="Female"> Nữ
+			<p class="error" id= "errorgender" style="padding-left: 157px;"></p>
+		</div>
+		<div class="content">
+			<div id="label">
+				<label>Email</label>
+			</div>
+			<input class="input" type="email" name="" id="email" placeholder="Nhập Email">
+			<p class="error" id= "erroremail"></p>
+		</div>
+		<div class="content">
+			<div id="label">
+				<label>Số điện thoại</label>
+			</div>
+			<input class="input" type="number" name="" id="mobile" placeholder="Nhập Số điện thoại">
+			<p class="error" id= "errormobile"></p>
+		</div>
+		<div class="content">
+			<div id="label">
+				<label>Mật khẩu</label>
+			</div>
+			<input class="input" type="password" name="" id="password" placeholder="Nhập mật khẩu">
+			<p class="error" id= "errorpassword"></p>
+		</div>
+		<div class="content">
+			<div id="label">
+				<label>Xác nhận mật khẩu</label>
+			</div>
+			<input class="input" type="password" name="" id="cfpassword" placeholder="Xác nhận mật khẩu">
+			<p class="error" id= "errorcfpassword"></p>
+		</div>
+		<div id="button" style="text-align: center;">
+			<input type="submit" name="submit" id="add" value="Đăng kí">
+			<input type="reset" name="reset" id="reset" value="Xóa trắng">
+		</div>
+	</form>
+	<script type="text/javascript" src="Js/Bai 2.js" onclick="("></script>
+</body>
+</html>

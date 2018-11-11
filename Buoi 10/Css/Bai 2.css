@@ -1,0 +1,35 @@
+#label{
+			display: inline-block;
+			width: 200px;
+		}
+		.error{
+			display: inline-block;
+		}
+		.input{
+			width: 250px;
+			margin-right: 9px;
+		}
+		.error{
+			color: red;
+		}
+		form{
+			border: 2px solid #ccc;
+			border-radius: 15px;
+			padding: 10px 20px 0 20px;
+			width: 50%;
+			margin: auto;
+		}
+		#add,#reset{
+			background: red;
+			color: white;
+			font-weight: bold;
+			padding: 2px 15px 2px 15px;
+			margin: 10px 100px 0 100px;
+		}
+		#button{
+			position: relative;
+			top: 40px;
+		}
+		.content{
+			height: 40px;
+		}
