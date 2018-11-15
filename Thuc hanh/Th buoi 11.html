@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Thư viện jquery -->
+	<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		#content2{
+			background: red;
+			width: 300px;
+			height: 300px;
+			padding: 10px;
+		}
+		#content2>p{
+			background: green;
+		}
+		#update{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div id="content">
+		<p class="text">Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p class="text">Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<ul>
+		<li id="first">Home</li>
+		<li class="item">Home</li>
+		<li class="item">Home</li>
+		<li class="item">Home</li>
+		<li class="item">Home</li>
+	</ul>
+	<input type="text" name="">
+	<input type="password" name="">
+	<button>Hello</button>
+	<div id="content2">
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div> -->
+
+	<input type="text" name="" id="input" value="">
+	<button id="add">Add</button>
+	<button id="update">Update</button>
+	<button id="checkall">Check All</button>
+	<button id="uncheckall">Uncheck All</button>
+	<button id="delcheck">Delete Check</button>
+	<table>
+		<tbody id="content">
+			
+		</tbody>
+	</table>
+
+	<script type="text/javascript">
+		$(function(){
+			// $('#content>.text').css('color','red').css('font-size','20px');
+			// $('#first +.item').css('color','blue').css('list-style','none');
+			// $(':input').css('background-color','green');
+			// $(':password').css('background-color','red');
+			// $('.item').html('<li style="color: green; font-size:20px; list-style:none">Ahihi</li>');
+			// $('.item').removeClass('item');
+			// $('.item').remove();
+			// $('.item').css({
+			// 	'background':'red',
+			// 	'color': 'white'
+			// })
+			// $(window).on('resize',function(){
+			// 	console.log($('body').width())
+			// })
+			// $('button').on('click',function(){
+			// 	alert('Hello mother fucker')
+			// })
+
+			$('#add').on('click',function(){
+				var input =$('#input').val()
+				var j=1;
+				$('table').prepend(`
+						<tr id=`+ j +`>
+							<td>
+								<input class="checkbox" type="checkbox" name="" id="">
+							</td>
+							<td>
+								`+ input +`
+							</td>
+							<td>
+								<button class="del">Delete</button>
+							</td>
+							<td>
+								<button content=`+ input +` class="edit">Edit</button>
+							</td>
+						</tr>`)
+				$('#input').val('')
+				j++
+			})
+			$('body').on('click', '.del', function(){
+				$(this).parent().parent().remove();
+			})
+			$('#checkall').on('click', function(){
+				var checkbox =$('.checkbox');
+				for (var i = checkbox.length - 1; i >= 0; i--) {
+					checkbox[i].checked  = !checkbox[i].checked;
+				}
+			})
+			// $('body').on('click', '#delcheck', function(){
+			// 	var checkbox=$('.checkbox');
+			// 	for (var i = checkbox.length - 1; i >= 0; i--) {
+			// 		if (checkbox[i].checked){
+			// 			$('#tr').remove();
+			// 		}
+			// 	}
+			// })
+
+			$('body').on('click', '.edit', function(){
+				var content = $(this).attr('content');
+
+				$('#input').val(content)
+				$('#add').css('display' 'none')
+				$('#update').css('display' 'inline-block')
+				
+			})
+		})
+	</script>
+</body>
+</html>

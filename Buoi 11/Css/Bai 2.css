@@ -1,0 +1,30 @@
+*{
+			margin: 0px;
+		}
+		#container{
+			width: 60%;
+			margin: auto;
+			background: #484848;
+			color: white;
+		}
+		#container>h3{
+			cursor: pointer;
+  			border: 1px solid #ccc;
+  			background: #484848;
+  			padding: 8px;
+		}
+		.content{
+			border: 1px solid #ccc;
+		}
+		.content>p{
+			padding: 30px;
+			color: white;
+		}
+		.fas{
+			position: relative;
+			right: 18px;
+			background: #beee42;
+			color: #82a624;
+			padding: 5px;
+			border-radius: 5px;
+		}
