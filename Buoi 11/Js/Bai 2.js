@@ -23,6 +23,7 @@ $("#container .content:not(:first)").hide(); //Ẩn các content trừ content �
 	      	} 
 	      	else {
 		        $(".header").next("div").slideUp();
+		        $(".header").css('color' , 'white');
 		        $(".header i").attr("class", "fas fa-plus"); //Chuyển class fa-minus thành fa-plus
 		        $(this).next("div").slideDown(); //content slidedown
 		        $(this).css('color' , '#beee42');
