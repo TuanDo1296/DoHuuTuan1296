@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		#box{
+			width: 50%;
+			height: 200px;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div id="box"></div>
+	<button id="show">show</button>
+	<button id="hide">hide</button>
+	<button id="toggle">toggle</button>
+	<button id="fadeout">fade out</button>
+	<button id="fadein">fade in</button>
+	<button id="fadetoggle">fade toggle</button> -->
+	<!-- Bộ nhớ:<select id="size">
+		<option value="16">16gb</option>
+		<option value="32">32gb</option>
+		<option value="64">64gb</option>
+	</select>
+	<div id="price">
+		Giá là 5 triệu
+	</div> -->
+	<input id="button" type="button" name="" value="click">
+	<div id="selector">
+		<p>Thẻ p</p>
+		<span>Thẻ span</span>
+		<ul>
+			<li>abc1</li>
+			<li>abc2</li>
+			<li>abc3</li>
+			<li>abc4</li>
+			<li>abc5</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('#box').on('mouseenter', function(){
+			// 	$(this).css('background', 'red')
+			// })
+			// $('#box').on('mouseleave', function(){
+			// 	$(this).css('background', 'blue')
+			// })
+			// $('#size').on('change', function(){
+			// 	var value = $(this).val();
+			// 	if(value == 16){
+			// 		$('#price').text('Giá là 5 triệu')
+			// 	}
+			// 	if(value == 32){
+			// 		$('#price').text('Giá là 6 triệu')
+			// 	}
+			// 	if(value == 64){
+			// 		$('#price').text('Giá là 7 triệu')
+			// 	}
+			// })
+			// $('#show').on('click', function(){
+			// 	$('#box').show(1000);
+			// })
+			// $('#hide').on('click', function(){
+			// 	$('#box').hide(1000);
+			// })
+			// $('#toggle').on('click', function(){
+			// 	$('#box').toggle(1000);
+			// })
+			// $('#fadeout').on('click', function(){
+			// 	$('#box').fadeOut(1000);
+			// })
+			// $('#fadein').on('click', function(){
+			// 	$('#box').fadeIn(1000);
+			// })
+			// $('#fadetoggle').on('click', function(){
+			// 	$('#box').fadeToggle(1000);
+			// })
+			$('#button').on('click', function(){
+				$('#selector').children().eq(1).css('color', 'red');
+			})
+		})
+	</script>
+</body>
+</html>

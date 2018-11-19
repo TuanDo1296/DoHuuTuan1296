@@ -16,13 +16,15 @@ $("#container .content:not(:first)").hide(); //Ẩn các content trừ content �
 		// 		$(this).css('color' , 'white');
 		// 		$(this).children().toggleClass("fa-minus fa-plus");
 		// 	}
-			if($(this).next("div").is(":visible")){ //Điều kiện: nếu content nào hiện
-		        $(this).next("div").slideUp(); //content tiếp theo sẽ slideup
+			// Kiểm tra nếu đang ẩn thì sẽ hiện và ẩn các phần tử khác
+			// Nếu đang hiện thì click vào h3 sẽ ẩn
+			if($(this).next("div").is(":visible")){ 
+		        $(this).next("div").slideUp();
 		        $(this).css('color' , 'white');
 		        $(this).children().toggleClass("fa-minus fa-plus"); //toggle giữa nút + và -
 	      	} 
 	      	else {
-		        $(".header").next("div").slideUp();
+		        $(".header").next("div").slideUp(); //content slideup
 		        $(".header").css('color' , 'white');
 		        $(".header i").attr("class", "fas fa-plus"); //Chuyển class fa-minus thành fa-plus
 		        $(this).next("div").slideDown(); //content slidedown

@@ -1,0 +1,70 @@
+*{
+			font-family: arial;
+		}
+		#advanced-form{
+			width: 50%;
+			margin: auto;
+		}
+		.content>*{
+			display: block;
+			margin: 7px 0 10px 0;
+			border-radius: 10px;
+		}
+		.required{
+			width: 250px;
+			height: 25px;
+			border-radius: 5px;
+		}
+		.tab{
+			width: 21%;
+			background: #eeeeee; 
+			color: #aaa;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 10px;
+			padding-left: 10px;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.tabactive{
+			background: #2184be;
+			color: white;
+		}
+		.tabfinish{
+			background: #9dc8e2;
+			color: white;
+		}
+		.content{
+			background: #eeeeee;
+			border-radius: 10px;
+			padding: 10px 20px 10px 20px;
+			/*height: 450px;*/
+			display: none;
+		}
+		.ctactive{
+			display: block;
+		}
+		button{
+			background: #2184be;
+			padding: 7px 20px 7px 20px;
+			border: none;
+			border-radius: 5px;
+			float: right;
+			margin-right: 20px;
+			margin-top: 15px;
+			/*margin: 10px 10px;*/
+			cursor: pointer;
+			/*position: relative;*/
+			/*top: 175px;*/
+		}
+		.prev{
+			margin-right: 20px;
+			margin-top: 15px;
+		}
+		.next{
+			margin-top: 15px;
+		}
+		.error{
+			padding-left: 20px;
+			color: red;
+		}
