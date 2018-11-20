@@ -1,5 +1,10 @@
-*{
+		*{
 			font-family: arial;
+
+		}
+		body{
+			background-image: url(../img/pexels-photo-165818.jpeg);
+			background-size: cover;
 		}
 		#advanced-form{
 			width: 50%;
@@ -52,10 +57,14 @@
 			float: right;
 			margin-right: 20px;
 			margin-top: 15px;
+			color: white;
 			/*margin: 10px 10px;*/
 			cursor: pointer;
 			/*position: relative;*/
 			/*top: 175px;*/
+		}
+		button:hover{
+			background: #9dc8e2;
 		}
 		.prev{
 			margin-right: 20px;
